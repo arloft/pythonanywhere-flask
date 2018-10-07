@@ -14,7 +14,7 @@ def hello_world():
 def hello():
     return '''
         <p>say hello again</p>
-        <p><a href="/"></a></p>
+        <p><a href="/">go home</a></p>
         '''
 
 ##import os
