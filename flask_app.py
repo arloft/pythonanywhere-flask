@@ -2,12 +2,13 @@
 ## A very simple Flask Hello World app for you to get started with...
 ## --- below is the default generated app from pythonanywhere's Flask install
 
+from flask import render_template
 from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>Hello from Flask!</h1><a href="./hello">Say hello again</a>'
+    return render_template('index.html')
 
 @app.route('/hello')
 def hello():
