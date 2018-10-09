@@ -3,12 +3,11 @@
 ## --- below is the default generated app from pythonanywhere's Flask install
 
 from flask import Flask
-
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'Hello from Flask! <a href="./hello">Say hello again</a>'
+def index():
+    return '<h1>Hello from Flask!</h1><a href="./hello">Say hello again</a>'
 
 @app.route('/hello')
 def hello():
@@ -16,6 +15,8 @@ def hello():
         <p>say hello again</p>
         <p><a href="/">go home</a></p>
         '''
+if __name__ == '__main__':
+    app.run(debug=True)
 
 ##import os
 ##
