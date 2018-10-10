@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    deck_count = 8
     return render_template('index.html')
 
 @app.route('/hello')
