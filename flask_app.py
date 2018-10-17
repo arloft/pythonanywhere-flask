@@ -3,6 +3,7 @@
 ## --- below is the default generated app from pythonanywhere's Flask install
 
 from flask import render_template
+from models import *
 from flask import Flask
 app = Flask(__name__)
 
