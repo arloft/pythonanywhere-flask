@@ -3,6 +3,7 @@ from peewee import *
 
 # connect to the SQLite database, in the "db-files" folder
 db = SqliteDatabase('/home/arloft/learn/edhdecks.db')
+# ^ pythonanywhere requires the full path to the .db file
 
 # define what a 'Deck' is
 class Deck(Model):
