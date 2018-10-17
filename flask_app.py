@@ -9,7 +9,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    deck_count = 8
+    deck_count = Deck.select().count()
+    # ^ queries the database, asking it to count the number of decks present
     return render_template('index.html', count=deck_count)
 
 @app.route('/hello')
