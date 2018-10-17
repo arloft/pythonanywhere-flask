@@ -2,7 +2,7 @@
 from peewee import *
 
 # connect to the SQLite database, in the "db-files" folder
-db = SqliteDatabase('edhdecks.db')
+db = SqliteDatabase('/home/arloft/learn/edhdecks.db')
 
 # define what a 'Deck' is
 class Deck(Model):

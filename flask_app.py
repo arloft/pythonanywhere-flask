@@ -1,7 +1,7 @@
 
 ## A very simple Flask Hello World app for you to get started with...
 ## --- below is the default generated app from pythonanywhere's Flask install
-
+import sqlite3
 from flask import render_template
 from models import *
 from flask import Flask
